@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Wordly — Free Word Counter</title>
+<meta name="description" content="Wordly is a free, browser-based word counter built to be fast, private, and simple. Learn about the tool and how it works.">
+<link rel="canonical" href="https://www.wordcounter-example.com/about.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__glow atmosphere__glow--one"></div>
+  <div class="atmosphere__glow atmosphere__glow--two"></div>
+  <div class="atmosphere__grid"></div>
+</div>
+
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Wordly home">
+      <span class="nav__brand-mark" aria-hidden="true"></span>
+      <span class="nav__brand-name">Wordly</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#tool">Tool</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#related-tools">More tools</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="index.html#tool" class="btn btn--primary btn--small">Open counter</a>
+      <button class="nav__menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#tool">Tool</a>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#related-tools">More tools</a>
+    <a href="index.html#tool" class="btn btn--primary btn--small">Open counter</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <h1 class="page-hero__title">About Wordly</h1>
+      <p class="page-hero__meta">A small, focused tool — built to do one thing well.</p>
+    </div>
+  </section>
+
+  <article class="prose">
+    <h2>Why we built it</h2>
+    <p>Most word counters online are cluttered with ads, slow to load, or ask you to sign in before you can type a single sentence. Wordly exists to be the opposite: a fast, clean, private tool that opens instantly and gets out of your way.</p>
+
+    <h2>What it does</h2>
+    <p>Wordly counts words, characters, sentences and paragraphs, and estimates reading time — all inside your browser, with no server round-trip. That means results appear instantly, and your text is never transmitted anywhere.</p>
+
+    <h2>Who it's for</h2>
+    <p>Students checking essays against a limit, writers tracking pacing, marketers fitting copy to a character count, and anyone who just wants to know how long their text is. If you write, you'll probably find a use for it.</p>
+
+    <h2>How it's built</h2>
+    <p>Wordly is built with plain HTML, CSS and JavaScript — no frameworks, no backend, no database. That keeps it fast and keeps your text local to your device. You can read more about exactly what that means for your privacy on our <a href="privacy.html">privacy page</a>.</p>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__brand-mark" aria-hidden="true"></span>
+      <span class="nav__brand-name">Wordly</span>
+      <p>A fast, private, browser-based word counter.</p>
+    </div>
+    <nav class="footer__col" aria-label="Product">
+      <h3>Product</h3>
+      <a href="index.html#tool">Word Counter</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#related-tools">Related tools</a>
+    </nav>
+    <nav class="footer__col" aria-label="Company">
+      <h3>Company</h3>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Wordly. All counting happens in your browser.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

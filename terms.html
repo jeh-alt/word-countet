@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — Wordly Word Counter</title>
+<meta name="description" content="Terms of use for the Wordly word counter tool, a free browser-based utility for counting words, characters, sentences and paragraphs.">
+<link rel="canonical" href="https://www.wordcounter-example.com/terms.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__glow atmosphere__glow--one"></div>
+  <div class="atmosphere__glow atmosphere__glow--two"></div>
+  <div class="atmosphere__grid"></div>
+</div>
+
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Wordly home">
+      <span class="nav__brand-mark" aria-hidden="true"></span>
+      <span class="nav__brand-name">Wordly</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#tool">Tool</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#related-tools">More tools</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="index.html#tool" class="btn btn--primary btn--small">Open counter</a>
+      <button class="nav__menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#tool">Tool</a>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#related-tools">More tools</a>
+    <a href="index.html#tool" class="btn btn--primary btn--small">Open counter</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <h1 class="page-hero__title">Terms of Use</h1>
+      <p class="page-hero__meta">Last updated: August 2026</p>
+    </div>
+  </section>
+
+  <article class="prose">
+    <h2>Acceptance of terms</h2>
+    <p>By using this website and its word counter tool, you agree to these terms. If you don't agree, please don't use the site.</p>
+
+    <h2>The service</h2>
+    <p>Wordly provides a free, browser-based tool for counting words, characters, sentences and paragraphs, and for estimating reading time. The tool is provided "as is," without warranties of any kind, express or implied.</p>
+
+    <h2>Acceptable use</h2>
+    <ul>
+      <li>Don't use the site in a way that disrupts its operation or attempts to gain unauthorized access to it.</li>
+      <li>Don't use the site to process or distribute unlawful content.</li>
+      <li>Don't attempt to scrape, reverse engineer, or resell the tool without permission.</li>
+    </ul>
+
+    <h2>Your content</h2>
+    <p>Any text you type or paste into the counter belongs to you. As described in our <a href="privacy.html">privacy policy</a>, that text is processed locally in your browser and is not transmitted to or stored by us.</p>
+
+    <h2>Accuracy of results</h2>
+    <p>We aim for the word, character, sentence and paragraph counts to be accurate, and reading time estimates to be reasonable, but counts are produced algorithmically and may not exactly match every external tool or style guide. Where a count is required for an official or graded submission, treat the tool as a helpful estimate rather than an authoritative source, and check any submission requirements directly.</p>
+
+    <h2>Advertising</h2>
+    <p>This site may display third-party advertising, including through Google AdSense, to support the cost of running the service for free. Advertising is governed by the advertiser's and ad network's own terms and policies.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, the site operator is not liable for any indirect, incidental, or consequential damages arising from your use of, or inability to use, this website or its tools.</p>
+
+    <h2>Changes to these terms</h2>
+    <p>These terms may be updated from time to time. Continued use of the site after changes are posted constitutes acceptance of the revised terms.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about these terms can be directed to the site operator's contact details, where provided.</p>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__brand-mark" aria-hidden="true"></span>
+      <span class="nav__brand-name">Wordly</span>
+      <p>A fast, private, browser-based word counter.</p>
+    </div>
+    <nav class="footer__col" aria-label="Product">
+      <h3>Product</h3>
+      <a href="index.html#tool">Word Counter</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#related-tools">Related tools</a>
+    </nav>
+    <nav class="footer__col" aria-label="Company">
+      <h3>Company</h3>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Wordly. All counting happens in your browser.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
