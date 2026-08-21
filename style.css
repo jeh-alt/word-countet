@@ -822,20 +822,20 @@ main, header, footer { position: relative; z-index: 1; }
 @media (max-width: 900px) { .use-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .use-grid { grid-template-columns: 1fr; } }
 
-/* Learn / SEO content */
+/* Learn / SEO content — single stacked column, paragraph by paragraph */
 .learn-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-6) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 720px;
+  margin: 0 auto;
 }
 .learn-card {
-  padding-top: var(--space-5);
+  padding-top: var(--space-6);
   border-top: 1px solid var(--border);
 }
-.learn-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: var(--space-2); letter-spacing: -0.01em; }
-.learn-card p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; }
-
-@media (max-width: 780px) { .learn-grid { grid-template-columns: 1fr; } }
+.learn-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: var(--space-3); letter-spacing: -0.01em; }
+.learn-card p { color: var(--text-secondary); font-size: 1rem; line-height: 1.75; }
 
 /* ==========================================================================
    FAQ
@@ -884,13 +884,21 @@ main, header, footer { position: relative; z-index: 1; }
   font-size: 0.95rem;
   line-height: 1.65;
 }
-.faq-item__trigger[aria-expanded="true"] + .faq-item__panel {
+.faq-item:has(.faq-item__trigger[aria-expanded="true"]) .faq-item__panel {
   grid-template-rows: 1fr;
 }
-.faq-item__trigger[aria-expanded="true"] + .faq-item__panel > p {
+.faq-item:has(.faq-item__trigger[aria-expanded="true"]) .faq-item__panel > p {
   padding-bottom: var(--space-5);
 }
 .faq-item__panel { overflow: hidden; }
+
+/* Fallback for browsers without :has() support: JS also toggles this class */
+.faq-item.is-open .faq-item__panel {
+  grid-template-rows: 1fr;
+}
+.faq-item.is-open .faq-item__panel > p {
+  padding-bottom: var(--space-5);
+}
 
 /* ==========================================================================
    Related tools
