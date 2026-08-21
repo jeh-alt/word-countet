@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.wordcounter-example.com/sitemap.xml
+Sitemap: https://usewordly.netlify.app/sitemap.xml
