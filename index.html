@@ -5,24 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WordCount — Free Word Counter Tool | Count Words, Characters & Reading Time</title>
 <meta name="description" content="Count words, characters, sentences and paragraphs instantly. A free, fast, browser-based word counter with reading time estimates. No sign-up, nothing stored.">
-<link rel="canonical" href="https://usewordcount.netlify.app/">
+<link rel="canonical" href="https://usewordcount.vercel.app/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Word Counter — Free Online Word & Character Count Tool">
 <meta property="og:description" content="Count words, characters, sentences and paragraphs instantly in your browser. Free, private, and fast — no sign-up required.">
-<meta property="og:url" content="https://usewordcount.netlify.app/">
+<meta property="og:url" content="https://usewordcount.vercel.app/">
 <meta property="og:site_name" content="WordCount">
-<meta property="og:image" content="https://usewordcount.netlify.app/og-image.png">
+<meta property="og:image" content="https://usewordcount.vercel.app/og-image.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Word Counter — Free Online Word & Character Count Tool">
 <meta name="twitter:description" content="Count words, characters, sentences and paragraphs instantly in your browser. Free, private, and fast.">
-<meta name="twitter:image" content="https://usewordcount.netlify.app/og-image.png">
+<meta name="twitter:image" content="https://usewordcount.vercel.app/og-image.png">
 
 <meta name="theme-color" content="#0a0a0d">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +42,7 @@
   "name": "WordCount Word Counter",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any (Web Browser)",
-  "url": "https://usewordcount.netlify.app/",
+  "url": "https://usewordcount.vercel.app/",
   "description": "A free, browser-based word counter that counts words, characters, sentences and paragraphs, and estimates reading time. No sign-up required and text is never uploaded.",
   "offers": {
     "@type": "Offer",
@@ -91,6 +94,20 @@
 </head>
 <body>
 
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" focusable="false">
+  <defs>
+    <linearGradient id="brandGradient" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8c7cfb"/>
+      <stop offset="1" stop-color="#f2b25c"/>
+    </linearGradient>
+    <symbol id="logo-mark" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="9" fill="#08080a"/>
+      <rect x="1.5" y="1.5" width="29" height="29" rx="8.5" fill="none" stroke="url(#brandGradient)" stroke-opacity="0.4"/>
+      <path d="M7 10.5 L10.4 22 L16 12.5 L21.6 22 L25 10.5" fill="none" stroke="url(#brandGradient)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
 <a class="skip-link" href="#tool">Skip to word counter</a>
 
 <!-- Atmospheric background -->
@@ -103,7 +120,7 @@
 <header class="nav" id="siteNav">
   <div class="nav__inner">
     <a href="#top" class="nav__brand" aria-label="WordCount home">
-      <span class="nav__brand-mark" aria-hidden="true"></span>
+      <svg class="nav__brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#logo-mark"></use></svg>
       <span class="nav__brand-name">WordCount</span>
     </a>
 
@@ -559,8 +576,10 @@
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__brand">
-      <span class="nav__brand-mark" aria-hidden="true"></span>
-      <span class="nav__brand-name">WordCount</span>
+      <a href="index.html#top" class="footer__brand-row" aria-label="WordCount home">
+        <svg class="nav__brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#logo-mark"></use></svg>
+        <span class="nav__brand-name">WordCount</span>
+      </a>
       <p>A fast, private, browser-based word counter.</p>
     </div>
 

@@ -5,15 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About WordCount — Free Online Word Counter</title>
 <meta name="description" content="WordCount is a free, browser-based word counter built to be fast, private, and simple. Learn about the tool and how it works.">
-<link rel="canonical" href="https://usewordcount.netlify.app/about.html">
+<link rel="canonical" href="https://usewordcount.vercel.app/about.html">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" focusable="false">
+  <defs>
+    <linearGradient id="brandGradient" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8c7cfb"/>
+      <stop offset="1" stop-color="#f2b25c"/>
+    </linearGradient>
+    <symbol id="logo-mark" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="9" fill="#08080a"/>
+      <rect x="1.5" y="1.5" width="29" height="29" rx="8.5" fill="none" stroke="url(#brandGradient)" stroke-opacity="0.4"/>
+      <path d="M7 10.5 L10.4 22 L16 12.5 L21.6 22 L25 10.5" fill="none" stroke="url(#brandGradient)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
 
 <div class="atmosphere" aria-hidden="true">
   <div class="atmosphere__glow atmosphere__glow--one"></div>
@@ -24,7 +41,7 @@
 <header class="nav" id="siteNav">
   <div class="nav__inner">
     <a href="index.html" class="nav__brand" aria-label="WordCount home">
-      <span class="nav__brand-mark" aria-hidden="true"></span>
+      <svg class="nav__brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#logo-mark"></use></svg>
       <span class="nav__brand-name">WordCount</span>
     </a>
     <nav class="nav__links" aria-label="Primary">
@@ -75,8 +92,10 @@
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__brand">
-      <span class="nav__brand-mark" aria-hidden="true"></span>
-      <span class="nav__brand-name">WordCount</span>
+      <a href="index.html#top" class="footer__brand-row" aria-label="WordCount home">
+        <svg class="nav__brand-mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#logo-mark"></use></svg>
+        <span class="nav__brand-name">WordCount</span>
+      </a>
       <p>A fast, private, browser-based word counter.</p>
     </div>
     <nav class="footer__col" aria-label="Product">
