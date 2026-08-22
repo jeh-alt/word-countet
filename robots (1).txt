@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://usewordcount.netlify.app/sitemap.xml
-
-# NOTE: usewordcount.netlify.app is a temporary hosting domain.
-# Once usewordcount.com is purchased and DNS is live, update the
-# Sitemap line above (and sitemap.xml, canonical tags, and og:url /
-# JSON-LD "url" fields across all pages) to the new domain.
